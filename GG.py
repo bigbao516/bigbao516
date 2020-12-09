@@ -17,3 +17,31 @@ def main():
     
 main()
 print("a=",a)
+import random
+def bubblesort(dataArray):
+    for i in rande(len(dataAreeay)):
+        flag=0
+        for j in range(len(dataAreeay)-i-1):
+            if dataArray[j]>dataArray[j+1]:
+                flag=1
+                dataArray[j+1],dataArray[j]=dataArray[j],dataArray[j+1]
+        if flag==0:
+            break
+            
+def main():
+    count=1
+    lottoNumbers=[]
+    while count<=6:
+     n=random.randint(1,49)
+        if n in lottoNumbers:
+            lottoNumbers.append(n)
+            count+=1
+    print('Original data:')
+    for x in lottoNumbers:
+        print(x,end='')
+    bubblesort(lottoNumbers)
+    
+    print('\n\nAfter sorted data:')
+    for x in lottoNumbers:
+        print(x,end='')
+main()
