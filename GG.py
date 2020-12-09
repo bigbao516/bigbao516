@@ -9,3 +9,11 @@ def main():
     tot=sum(f,end)
     print('Sum of even numbers from %d to %d is %d'%(f,end,tot))
 main()
+
+a=100
+def main():
+    a=200
+    print("a=",a)
+    
+main()
+print("a=",a)
